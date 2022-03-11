@@ -20,4 +20,4 @@
 Sendo o que havia para o momento, e pela ausência dos outros integrantes (que participaram de posterior discussão via whatsapp), deu-se por encerrada a reunião às 19h:46min e, para constar, eu, Lucas Silvestre de Barros, lavrei a presente ata, que após lida e aprovada, segue assinada por mim e pelos demais participantes.  
 
 
-Recife, 07 de março de 2022.
+**Recife, 07 de março de 2022.**
