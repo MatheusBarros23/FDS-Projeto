@@ -10,3 +10,6 @@
     Marcelo Silvestre - mvls@cesar.school - MarkJNP
     Lucas Barros - lsb5@cesar.school - LucasSBarros
     Rafael Lancry - rlc@cesar.school - RafaelLancry
+
+  Sobre o Projeto:
+     Produção de website que agregue criticas de jogos, produzidas por usuários, e de notas. Inspirado por sites como Metacritic, Rotten Tomatoes 
