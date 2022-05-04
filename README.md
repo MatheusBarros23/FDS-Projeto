@@ -31,7 +31,7 @@ ___
 	 - Matheus Soares da Silva Dantas Pereira
 		- E-mail: mssdp@cesar.school 
 		- Github: Msoaressdp
-	 - Marcelo Vinicius Lopes Silvestre
+	 - Marcelo Vinícius Lopes Silvestre
 		- E-mail: mvls@cesar.school 
 		- Github: MarkJNP
 	 - Rafael Lancry de Carvalho
