@@ -10,13 +10,18 @@
             </thead>
             <tbody>
             {% for jogo in jogos %}
-                <tr>
-                    <td>{{ jogo.nome }}</td>
-                    <td>{{ jogo.categoria }}</td>
-                    <td>{{ jogo.console }}</td>
-                </tr>
+               <main class="container">
+                    <tr>
+                        <td>{{ jogo.nome }}</td>
+                        <td>{{ jogo.categoria }}</td>
+                        <td>{{ jogo.console }}</td>
+                    </tr>
                 {% endfor %}
-
+                </main>
             </tbody>
         </table>
+
+        <div> <!--EDITAR ESTE DIV!! CRIAR CLASSE E CENTRALIZAR-->
+            <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/8MUqoCPixQY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
 {% endblock %}
