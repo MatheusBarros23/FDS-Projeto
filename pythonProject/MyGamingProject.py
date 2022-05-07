@@ -64,7 +64,7 @@ def criar():
 @app.route('/login')
 def login():
     proxima = request.args.get('proxima')
-    return render_template('login.html', proxima=proxima)
+    return render_template('login.html', proxima=proxima, titulo='Faça seu Login')
 
 
 @app.route('/autenticar', methods=['POST', ])
