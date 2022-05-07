@@ -20,12 +20,35 @@
             {% endwith %}
 
       <div class="page-header">
+        <title>MyGamingProject</title>
+        <link rel="stylesheet" href="../static/reset.css">
+        <link rel="stylesheet" href="{{url_for('static', filename='bootstrap.css')}}">
+    </head>
+        <body>
+        <header>
+            <div class="caixa">
+				<h1 class="logo"><img src="../static/images/logo.png" alt="Logo MGC" title="Logo MGC&copy;"></h1>
+				<nav>
+					<ul >
+						<li ><a href="/">Home</a></li>
+						<li ><a href="/novo">Novo Jogo</a></li>
+						<li ><a href="#">Rankings</a></li>
+					</ul>
+				</nav>
+			</div>
+        </header>
+
+    <main class="caixa">
+
+        <div class="page-header">
           <h1>{{ titulo }}</h1>
       </div>
 
         {% block conteudo%} {% endblock %}
-
-
-    </div>
+    </main>
+        <footer>
+            <img src="../static/images/logob.png" alt="Logo do Site MGC" title="Logo do Site MGC&copy;">
+			<p class="texto-rodape">&copy; Copyright My Gaming Critics - 2022</p>
+        </footer>
     </body>
     </html>
