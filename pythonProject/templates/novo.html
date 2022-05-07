@@ -6,18 +6,25 @@
         <fieldset>
           <div class="form-group">
             <label for="nome" class="col-form-label">Nome</label>
-            <input type="text" id="nome" name="nome" class="form-control" placeholder="Battlefield 4, Fifa 20...">
+            <input type="text" id="nome" name="nome" class="form-control" placeholder="Battlefield 4, Fifa 20..." required>
           </div>
 
-            <div class="form-group">
+          <div class="form-group">
             <label for="categoria" class="col-form-label">Categoria</label>
-            <input type="text" id="categoria" name="categoria" class="form-control" placeholder="FPS, Moba, Arcade...">
+            <input type="text" id="categoria" name="categoria" class="form-control" placeholder="FPS, Moba, Arcade..." required>
           </div>
 
-            <div class="form-group">
+          <div class="form-group">
             <label for="console" class="col-form-label">Console</label>
-            <input type="text" id="console" name="console" class="form-control" placeholder="PS4, PS5, Xbox 360, Switch...">
+            <input type="text" id="console" name="console" class="form-control" placeholder="PS4, PS5, Xbox 360, Switch..." required>
           </div>
+
+          <div class="form-group">
+            <label for="critica" class="col-form-label">Critica:</label>
+            <textarea id="critica" name="critica" class="form-control" rows="5" cols="30" placeholder="Please sign in or create an account before writing a review."></textarea>
+          </div>
+
+
 
             <button type="submit" class="btn btn-primary">Salvar</button>
 

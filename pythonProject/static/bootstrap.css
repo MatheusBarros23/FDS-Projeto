@@ -103,9 +103,16 @@ nav a:hover {
 	text-decoration: underline;
 }
 
+.container-video{
+    padding: 1rem;
+    text-align: center;
+
+}
+
 .video{
   display: inline-block;
   position: static;
+  text-align: center;
 }
 
 footer {
@@ -2257,7 +2264,9 @@ progress {
 .form-control::placeholder {
   font-style: italic;
   font-size: small;
+  font-weight: normal;
 }
+
 /*Ending*/
 @media (prefers-reduced-motion: reduce) {
   .form-control {
