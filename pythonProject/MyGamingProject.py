@@ -2,16 +2,17 @@ from flask import Flask, render_template, request, redirect, session, flash, url
 
 
 class Jogo:
-    def __init__(self, nome, categoria, console):
+    def __init__(self, nome, categoria, console, critica):
         self.nome = nome
         self.categoria = categoria
         self.console = console
+        self.critica = critica #faltando implementar!! Critica do jogo sendo salva nesta variavel, mas ainda nao esta sendo passada pela lista.
 
 
-jogo1 = Jogo('Tetris', 'Puzzle', 'Atari')
-jogo2 = Jogo('God of War', 'Rack n Slash', 'PS2')
-jogo3 = Jogo('Mortal Kombat', 'Luta', 'PS2')
-jogo4 = Jogo('Battlefield 4', 'Tiro em 1ª pessoa', 'PS2')
+jogo1 = Jogo('Tetris', 'Puzzle', 'Atari',"")
+jogo2 = Jogo('God of War', 'Rack n Slash', 'PS2',"")
+jogo3 = Jogo('Mortal Kombat', 'Luta', 'PS2',"")
+jogo4 = Jogo('Battlefield 4', 'Tiro em 1ª pessoa', 'PS2',"")
 
 lista = [jogo1, jogo2, jogo3, jogo4]
 
@@ -53,7 +54,9 @@ def criar():
     nome = request.form['nome']
     categoria = request.form['categoria']
     console = request.form['console']
-    jogo = Jogo(nome, categoria, console)
+    critica = request.form['critica']
+
+    jogo = Jogo(nome, categoria, console, critica)
     lista.append(jogo)
     return redirect(url_for('index'))
 
