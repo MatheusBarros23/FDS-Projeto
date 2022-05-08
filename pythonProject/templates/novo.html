@@ -2,7 +2,17 @@
 {% block conteudo %}
      <main class="caixa">
 
-      <form action="{{ url_for('criar') }}" method="post">
+      <form action="{{ url_for('criar') }}" method="post" enctype="multipart/form-data">
+        <figure class="thumb col-md-4">
+          <img class="img-responsive" src="{{ url_for('imagem', nome_arquivo='capa_padrao.jpg') }}">
+          <figcaption>
+            <label class="fileContainer">
+               Mudar capa
+               <input type="file" name="arquivo" accept=".jpg">
+            </label>
+          </figcaption>
+        </figure>
+
         <fieldset>
           <div class="form-group">
             <label for="nome" class="col-form-label">Nome</label>
