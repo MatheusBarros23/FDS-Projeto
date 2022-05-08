@@ -32,7 +32,9 @@ cursor.executemany(
       [
             ('luan', 'Luan Marques', 'flask'),
             ('arkim', 'Lucas Barros', '1234'),
-            ('danilo', 'Danilo', 'vegas')
+            ('danilo', 'Danilo', 'vegas'),
+            ('Kryno', 'Matheus Barros', '4321'),
+
       ])
 
 cursor.execute('select * from MyGamingCritics.usuario')
