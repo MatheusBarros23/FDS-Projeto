@@ -7,7 +7,7 @@ from flask_mysqldb import MySQL
 app = Flask(__name__)
 app.secret_key = 'RicardoCosta'
 
-app.config['MYSQL_HOST'] = "0.0.0.0"
+app.config['MYSQL_HOST'] = "127.0.0.1"
 app.config['MYSQL_USER'] = "root"
 app.config['MYSQL_PASSWORD'] = "@admin07"
 app.config['MYSQL_DB'] = "MyGamingCritics"
@@ -74,7 +74,7 @@ def login():
     return render_template('login.html', proxima=proxima, titulo='Faça seu Login')
 
 
-@app.route('/autenticar', methods=['POST', ])
+@app.route('/autenticar', methods=['POST'])
 def autenticar():
     usuario = usuario_dao.buscar_por_id(request.form['usuario'])
     if usuario:
@@ -86,7 +86,6 @@ def autenticar():
     else:
         flash('Usuário não logado.')
         return redirect(url_for('login'))
-
 
 @app.route('/logout')
 def logout():
