@@ -26,9 +26,9 @@
 				<h1 class="logo"><img src="../static/images/logo.png" alt="Logo MGC" title="Logo MGC&copy;"></h1>
 				<nav>
 					<ul>
-						<li ><a href="/">Home</a></li>
-						<li ><a href="/novo">Novo Jogo</a></li>
-						<li ><a href="/login">Login</a></li>
+						<li ><a href="{{ url_for('index') }}">Home</a></li>
+						<li ><a href="{{ url_for('novo') }}">Novo Jogo</a></li>
+						<li ><a href="{{ url_for('login') }}">Login</a></li>
 					</ul>
 				</nav>
 			</div>
