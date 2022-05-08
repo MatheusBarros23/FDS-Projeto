@@ -3,12 +3,13 @@
      <main class="caixa">
 
       <form action="{{ url_for('atualizar') }}" method="post" enctype="multipart/form-data">
-        <figure class="thumb col-md-4">
-          <img class="img-responsive" src="{{ url_for('imagem', nome_arquivo=capa_jogo) }}">
-          <figcaption>
+        <figure class="caixa">
+          <img class="responsive" src="{{ url_for('imagem', nome_arquivo= capa_jogo) }}">
+            <figcaption >
+
             <label class="fileContainer">
-              Mudar capa
-               <input type="file" name="arquivo" accept=".jpg">
+              Mudar Capa
+               <input class="input-img" type="file" name="arquivo" accept=".jpg">
             </label>
           </figcaption>
         </figure>

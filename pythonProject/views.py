@@ -45,10 +45,9 @@ def editar(id):
     if 'usuario_logado' not in session or session['usuario_logado'] == None:
         return redirect(url_for('login', proxima=url_for('editar')))
     jogo = jogo_dao.busca_por_id(id)
-    nome_imagem =  recupera_imagem(id)
+    nome_imagem = recupera_imagem(id)
     capa_jogo = f'capa{id}.jpg'
-    return render_template('editar.html', titulo='Editando jogo', jogo=jogo,
-                                capa_jogo = nome_imagem)
+    return render_template('editar.html', titulo='Editando jogo', jogo=jogo, capa_jogo=nome_imagem)
 
 
 @app.route('/atualizar', methods=['POST',])
@@ -62,8 +61,9 @@ def atualizar():
     arquivo = request.files['arquivo']
     upload_path = app.config['UPLOAD_PATH']
     timestamp = time.time()
-    deleta_arquivo(jogo.id)
+
     arquivo.save(f'{upload_path}/capa{jogo.id}-{timestamp}.jpg')
+    deleta_arquivo(jogo.id)
     return redirect(url_for('index'))
 
 

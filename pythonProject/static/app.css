@@ -25,6 +25,16 @@ figcaption {
 .fileContainer {
     overflow: hidden;
     position: relative;
+    border-width: medium;
+    border-style: outset;
+    border-radius: 0.5rem;
+    background-color: lightgreen;
+    padding: 0.5rem;
+    font-weight: 600;
+}
+
+.fileContainer:hover {
+    border-style: inset;
 }
 
 .fileContainer [type=file] {
@@ -41,6 +51,3 @@ figcaption {
     top: 0;
 }
 
-td {
-    text-align: center;
-}

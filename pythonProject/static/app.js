@@ -4,8 +4,8 @@ $('form input[type="file"]').change(event => {
     console.log('sem imagem pra mostrar')
   } else {
       if(arquivos[0].type == 'image/jpeg') {
-        $('img').remove();
-        let imagem = $('<img class="img-responsive">');
+        $('.responsive').remove();
+        let imagem = $('<img class="responsive">');
         imagem.attr('src', window.URL.createObjectURL(arquivos[0]));
         $('figure').prepend(imagem);
       } else {

@@ -9,3 +9,4 @@ def recupera_imagem(id):
 
 def deleta_arquivo(id):
     arquivo = recupera_imagem(id)
+    os.remove(os.path.join(app.config['UPLOAD_PATH'], arquivo))
