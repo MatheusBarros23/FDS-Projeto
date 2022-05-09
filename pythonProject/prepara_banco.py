@@ -1,6 +1,6 @@
 import MySQLdb
 print('Conectando...')
-conn = MySQLdb.connect(user='root', passwd='admin', host='127.0.0.1', port=3306)
+conn = MySQLdb.connect(user='root', passwd='@admin07', host='127.0.0.1', port=3306)
 
 # Descomente se quiser desfazer o banco...
 conn.cursor().execute("DROP DATABASE IF EXISTS `MyGamingCritics`;")
@@ -31,8 +31,10 @@ cursor.executemany(
       'INSERT INTO MyGamingCritics.usuario (id, nome, senha) VALUES (%s, %s, %s)',
       [
             ('luan', 'Luan Marques', 'flask'),
-            ('nico', 'Nico', '7a1'),
-            ('danilo', 'Danilo', 'vegas')
+            ('arkim', 'Lucas Barros', '1234'),
+            ('danilo', 'Danilo', 'vegas'),
+            ('Kryno', 'Matheus Barros', '4321'),
+
       ])
 
 cursor.execute('select * from MyGamingCritics.usuario')

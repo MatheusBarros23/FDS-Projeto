@@ -1,37 +1,39 @@
 {% extends "template.html"%}
 {% block conteudo %}
+     <main class="caixa">
 
+      <form action="{{ url_for('atualizar') }}" method="post" enctype="multipart/form-data">
+        <figure class="caixa">
+          <img class="responsive" src="{{ url_for('imagem', nome_arquivo= capa_jogo) }}">
+            <figcaption >
 
-      <form action="{{ url_for('criar') }}" method="post" enctype="multipart/form-data">
-          <figure class="caixa">
-          <img class="responsive" src="{{ url_for('imagem', nome_arquivo='capa_padrao.jpg') }}">
-          <figcaption>
             <label class="fileContainer">
-              Inserir capa
-               <input type="file" name="arquivo" accept=".jpg">
+              Mudar Capa
+               <input class="input-img" type="file" name="arquivo" accept=".jpg">
             </label>
           </figcaption>
         </figure>
 
         <fieldset>
+          <input type="hidden" name="id" value="{{ jogo.id }}">
           <div class="form-group">
             <label for="nome" class="col-form-label">Nome</label>
-            <input type="text" id="nome" name="nome" class="form-control" placeholder="Battlefield 4, Fifa 20..." required>
+            <input type="text" id="nome" name="nome" class="form-control" value="{{ jogo.nome }}">
           </div>
 
           <div class="form-group">
             <label for="categoria" class="col-form-label">Categoria</label>
-            <input type="text" id="categoria" name="categoria" class="form-control" placeholder="FPS, Moba, Arcade..." required>
+            <input type="text" id="categoria" name="categoria" class="form-control" value="{{ jogo.categoria }}">
           </div>
 
           <div class="form-group">
             <label for="console" class="col-form-label">Console</label>
-            <input type="text" id="console" name="console" class="form-control" placeholder="PS4, PS5, Xbox 360, Switch..." required>
+            <input type="text" id="console" name="console" class="form-control" value="{{ jogo.console }}">
           </div>
 
           <div class="form-group"> <!--SALVAR A CRITICA NUMA VARIAVEL-->
             <label for="critica" class="col-form-label">Critica:</label>
-            <textarea id="critica" name="critica" class="form-control" rows="5" cols="30" placeholder="Please sign in or create an account before writing a review."></textarea>
+            <textarea id="critica" name="critica" class="form-control" rows="5" cols="30" ></textarea>
           </div>
 
             <button type="submit" class="btn btn-primary">Salvar</button>
@@ -39,5 +41,5 @@
 
         </fieldset>
       </form>
-
+     </main>
 {% endblock %}

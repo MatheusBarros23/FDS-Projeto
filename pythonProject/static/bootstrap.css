@@ -79,6 +79,18 @@ Our edition
 	margin: 0 auto;
 }
 
+
+.responsive{
+  width: 40%;
+  max-width: 20rem;
+  height: auto;
+  float: left;
+}
+
+.content-hide{
+  display: none;
+}
+
 nav {
 	position: absolute;
 	top:115px;
@@ -664,9 +676,10 @@ progress {
   background-color: #fff;
   border: 1px solid #dee2e6;
   border-radius: 0.25rem;
-  max-width: 100%;
+  max-width: 50%;
   height: auto;
 }
+
 
 .figure {
   display: inline-block;
