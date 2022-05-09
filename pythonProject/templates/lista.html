@@ -1,0 +1,33 @@
+{% extends "template.html"%}
+{% block conteudo %}
+        <table class="table table-striped table-responsive table-bordered">
+            <thead class="thead-default">
+                <tr>
+                    <th>Nome</th>
+                    <th>Categoria</th>
+                    <th>Console</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+            {% for jogo in jogos %}
+               <main class="container">
+                    <tr>
+                        <td>{{ jogo.nome }}</td> <!--Tornar link para pagina do jogo-->
+                        <td>{{ jogo.categoria }}</td>
+                        <td>{{ jogo.console }}</td>
+                        <td><a href="{{ url_for('editar', id=jogo.id) }}">Editar</a></td>
+                        <td><a href="{{ url_for('deletar', id=jogo.id) }}">Deletar</a></td>
+
+                    </tr>
+                {% endfor %}
+                </main>
+            </tbody>
+        </table>
+
+        <div class="container-video">
+            <p> Lançado em 2020, o <strong>Playstation 5</strong> nos traz alguns dos visuais mais impressionantes dos jogos. Mesmo que ainda no inico stry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It </p>
+
+            <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/8MUqoCPixQY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+{% endblock %}

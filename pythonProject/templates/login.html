@@ -1,0 +1,27 @@
+{% extends "template.html"%}
+{% block conteudo %}
+
+  <body>
+    <div class="container">
+
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                <ul id="messages" class="list-unstyled">
+                {% for message in messages %}
+                    <li class="alert alert-success">{{ message }}</li>
+                {% endfor %}
+                </ul>
+            {% endif %}
+        {% endwith %}
+
+        <form method="POST" action="{{ url_for('autenticar') }}">
+            <input type="hidden" name="proxima" value="{{ proxima }}">
+            <p><label>Nome de usuário:</label> <input class="form-control" type="text" name="usuario" required></p>
+            <p><label>Senha:</label> <input class="form-control" type="password" name="senha" required></p>
+            <p><button class="btn btn-primary" type="submit">Entrar</button></p>
+            <p>Não tem conta? <a class="password-reset-link" href="#cadastro">Registre-se</a></p> <!--Adicionar o comportamento para ir para tela de cadastro-->
+
+        </form>
+    </div>
+</body>
+{% endblock %}
