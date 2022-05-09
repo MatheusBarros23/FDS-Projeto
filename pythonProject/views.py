@@ -5,7 +5,7 @@ from models import Jogo
 from dao import JogoDao, UsuarioDao
 
 from helpers import deleta_arquivo, recupera_imagem
-from MyGamingCritics import db, app
+from app import db, app
 
 
 jogo_dao = JogoDao(db)
