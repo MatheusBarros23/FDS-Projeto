@@ -79,4 +79,4 @@ jobs:
         uses: azure/webapps-deploy@v2
         with:
           app-name: ${{ env.mygamingcritics }}
-          publish-profile: ${{ AZUREAPPSERVICE_PUBLISHPROFILE_896B5CDCE99E44B580AAC0A7729C6FDC }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_5C1A47905E3F4C7494DCA49B5E905BC8 }}
