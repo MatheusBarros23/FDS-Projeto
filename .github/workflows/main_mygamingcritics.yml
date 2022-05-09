@@ -60,4 +60,4 @@ jobs:
         with:
           app-name: 'mygamingcritics'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_8DAE25F757244EDFB25350D8472464C5 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_5C1A47905E3F4C7494DCA49B5E905BC8 }}
