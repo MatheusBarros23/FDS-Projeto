@@ -14,8 +14,6 @@ ___
 
 >As avaliações e críticas poderão ser acessados por outros usuários, os quais poderão utilizar estas informações para decidir se irão adquirir o jogo ou não.
 
->Ainda sobre as avaliações, seriam de 0-5 "joysticks".
-
 ___
 ### INFORMAÇÕES DOS AUTORES:
 
