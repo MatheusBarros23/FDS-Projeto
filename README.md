@@ -14,8 +14,6 @@ ___
 
 >As avaliações e críticas poderão ser acessados por outros usuários, os quais poderão utilizar estas informações para decidir se irão adquirir o jogo ou não.
 
->Ainda sobre as avaliações, seriam de 0-5 "joysticks".
-
 ___
 ### INFORMAÇÕES DOS AUTORES:
 
@@ -40,4 +38,4 @@ ___
 
 ___
 #### STATUS DO PROJETO
-> O projeto está em sua fase inicial, com a definição das historias do cliente.
+> O projeto está em sua fase de implementação. O desenvolvimento da estrutura dos arquivos e da logica de negocio do site estão... 
