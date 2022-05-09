@@ -40,4 +40,4 @@ ___
 
 ___
 #### STATUS DO PROJETO
-> O projeto está em sua fase inicial, com a definição das historias do cliente.
+> O projeto está em sua fase de implementação. O desenvolvimento da estrutura dos arquivos e da logica de negocio do site estão... 
