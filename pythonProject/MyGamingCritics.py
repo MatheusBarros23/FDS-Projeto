@@ -1,5 +1,6 @@
 from flask import Flask, jsonify, request
 from flask_mysqldb import MySQL
+import pymysql.cursors
 import os
 
 
