@@ -1,6 +1,6 @@
 import MySQLdb
 print('Conectando...')
-conn = MySQLdb.connect(user='root', passwd='@admin07', host='0.0.0.0s', port=3306)
+conn = MySQLdb.connect(user='root', passwd='@admin07', host='127.0.0.1', port=3306)
 
 # Descomente se quiser desfazer o banco...
 conn.cursor().execute("DROP DATABASE IF EXISTS `MyGamingCritics`;")
