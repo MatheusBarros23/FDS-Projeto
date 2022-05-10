@@ -30,7 +30,7 @@ def novo():
     return render_template('novo.html', titulo='Novo Jogo')
 
 
-@app.route('/criar', methods=['POST',])
+@app.route('/criar', methods=['POST','GET'])
 def criar():
     nome = request.form['nome']
     categoria = request.form['categoria']
@@ -55,7 +55,7 @@ def editar(id):
     return render_template('editar.html', titulo='Editando jogo', jogo=jogo, capa_jogo=nome_imagem)
 
 
-@app.route('/atualizar', methods=['POST',])
+@app.route('/atualizar', methods=['POST','GET'])
 def atualizar():
     nome = request.form['nome']
     categoria = request.form['categoria']
@@ -85,7 +85,7 @@ def login():
     return render_template('login.html', proxima=proxima, titulo='Faça seu Login')
 
 
-@app.route('/autenticar', methods=['POST', ])
+@app.route('/autenticar', methods=['POST','GET'])
 def autenticar():
     usuario = usuario_dao.buscar_por_id(request.form['usuario'])
     if usuario:
