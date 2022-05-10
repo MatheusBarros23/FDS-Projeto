@@ -1,6 +1,8 @@
 from flask import render_template, redirect, session, flash, url_for, send_from_directory, jsonify, request
 import time
 
+import os
+
 from models import Jogo
 from dao import JogoDao, UsuarioDao
 
