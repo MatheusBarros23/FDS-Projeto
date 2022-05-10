@@ -1,1 +1,1 @@
-web: python MyGamingCritics.py runserver 0.0.0.0:5000
+web: MyGamingCritics.py
