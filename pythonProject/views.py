@@ -1,12 +1,17 @@
 from flask import render_template, request, redirect, session, flash, url_for, send_from_directory
 import time
 
+import sys
+import logging
+
 from models import Jogo
 from dao import JogoDao, UsuarioDao
 
 from helpers import deleta_arquivo, recupera_imagem
 from MyGamingCritics import db, app
 
+app.logger.addHandler(logging.StreamHandler(sys.stdout))
+app.logger.setLevel(logging.ERROR)
 
 jogo_dao = JogoDao(db)
 usuario_dao = UsuarioDao(db)
