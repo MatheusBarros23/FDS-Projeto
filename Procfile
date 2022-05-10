@@ -1,1 +1,1 @@
-web: gunicorn MyGamingCritics:app
+web: gunicorn MyGamingCritics:views

@@ -2,7 +2,7 @@ import os
 
 SECRET_KEY = 'RicardoCosta'
 
-MYSQL_HOST = "127.0.0.1"
+MYSQL_HOST = "0.0.0.0"
 MYSQL_USER = "root"
 MYSQL_PASSWORD = "@admin07"
 MYSQL_DB = "MyGamingCritics"
