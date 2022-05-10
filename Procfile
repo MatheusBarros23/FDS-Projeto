@@ -1,1 +1,1 @@
-web: gunicorn MyGamingCritics.py
+web: gunicorn views.py
