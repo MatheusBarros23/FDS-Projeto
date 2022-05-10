@@ -1,7 +1,8 @@
 from flask import Flask
 from flask_mysqldb import MySQL
 
-from app.main import app
+from helpers import *
+
 
 app.config.from_pyfile('config.py')
 db = MySQL(app)

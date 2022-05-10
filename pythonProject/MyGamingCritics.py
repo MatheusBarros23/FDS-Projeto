@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, jsonify, request
 from flask_mysqldb import MySQL
 
 
@@ -8,5 +8,5 @@ db = MySQL(app)
 
 from views import *
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     app.run(debug=True)
