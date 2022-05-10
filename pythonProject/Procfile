@@ -1,1 +1,1 @@
-web: MyGamingCritics.py
+web: gunicorn MyGamingCritics.wsgi
