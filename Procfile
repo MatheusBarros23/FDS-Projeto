@@ -1,1 +1,1 @@
-web: gunicorn webscrap:app
+web: uwsgi uwsgi.ini
