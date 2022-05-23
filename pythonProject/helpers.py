@@ -1,5 +1,5 @@
 import os
-from MyGamingCritics import app
+from app import app
 
 def recupera_imagem(id):
     for nome_arquivo in os.listdir(app.config['UPLOAD_PATH']):

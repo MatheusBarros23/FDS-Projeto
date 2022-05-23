@@ -1,14 +1,14 @@
-from flask import render_template, redirect, session, flash, url_for, send_from_directory, jsonify, request
+from flask import render_template, request, redirect, session, flash, url_for, send_from_directory
 import time
 
-import os
+import sys
+import logging
 
 from models import Jogo
 from dao import JogoDao, UsuarioDao
 
 from helpers import deleta_arquivo, recupera_imagem
-from MyGamingCritics import db, app
-
+from app import db, app
 
 
 jogo_dao = JogoDao(db)
