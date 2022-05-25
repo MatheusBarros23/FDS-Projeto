@@ -17,7 +17,7 @@ class JogoDao:
 
         if (jogo.id):
             cursor.execute(SQL_ATUALIZA_JOGO, (jogo.nome, jogo.categoria, jogo.console, jogo.id))
-        else: #Colocar um controlador aqui! que só permita alterar se obedecer algumas condicoes!! (pelo menos 3 digitos)!
+        else: #Colocar um controlador aqui! que só permita alterar se obedecer algumaaaas condicoes!! (pelo menos 3 digitos)!
             cursor.execute(SQL_CRIA_JOGO, (jogo.nome, jogo.categoria, jogo.console))
             jogo.id = cursor.lastrowid
         self.__db.connection.commit()
