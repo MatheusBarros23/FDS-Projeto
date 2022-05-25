@@ -10,7 +10,7 @@ Inspirado em sites como o Metacritic, Rotten Tomatoes e My anime list.
 ___
 ### USO
 
->Os usuários poderão armazenar em uma lista os títulos dos jogos que já jogaram e poderão avaliar individualmente a jogabilidade, trilha sonora, gráficos visuais e as demais características, das quais será realizado o cálculo da média para ranqueamento do jogo.
+>Os usuários poderão armazenar em uma lista os títulos dos jogos que já jogaram e poderão avaliar individualmente cada jogo. Bem como adicionar capa e critica.
 
 >As avaliações e críticas poderão ser acessados por outros usuários, os quais poderão utilizar estas informações para decidir se irão adquirir o jogo ou não.
 
@@ -38,4 +38,8 @@ ___
 
 ___
 #### STATUS DO PROJETO
-> O projeto está em sua fase de implementação. O desenvolvimento da estrutura dos arquivos e da logica de negocio do site estão... .
+> O projeto está em sua fase de implementação. A estrutura do site está sendo feita, bem como a realização dos testes de unidade e de sistema.
+
+___
+#### LINK DO SITE
+> O projeto pode ser acessado por este link: https://mprb-y45pa1sk4n81zw2p.socketxp.com/
