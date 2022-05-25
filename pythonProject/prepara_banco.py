@@ -30,9 +30,9 @@ cursor = conn.cursor()
 cursor.executemany(
       'INSERT INTO MyGamingCritics.usuario (id, nome, senha) VALUES (%s, %s, %s)',
       [
-            ('luan', 'Luan Marques', 'flask'),
+            ('Suares', 'Matheus Soares', '5432'),
             ('arkim', 'Lucas Barros', '1234'),
-            ('danilo', 'Danilo', 'vegas'),
+            ('Dzr', 'Luis Eduardo', 'sport03'),
             ('Kryno', 'Matheus Barros', '4321'),
 
       ])

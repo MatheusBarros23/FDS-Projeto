@@ -15,7 +15,7 @@ jogo_dao = JogoDao(db)
 usuario_dao = UsuarioDao(db)
 
 
-@app.route('')
+@app.route('/')
 def index():
     lista = jogo_dao.listar()
     return render_template('lista.html', titulo='Jogos', jogos=lista)
