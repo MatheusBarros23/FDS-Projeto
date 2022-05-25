@@ -32,7 +32,7 @@ cursor.executemany(
       [
             ('Suares', 'Matheus Soares', '5432'),
             ('arkim', 'Lucas Barros', '1234'),
-            ('Dzr', 'Luis Eduardo', 'sport03'),
+            ('Dzr', 'Luiz Eduardo', 'sport03'),
             ('Kryno', 'Matheus Barros', '4321'),
 
       ])
