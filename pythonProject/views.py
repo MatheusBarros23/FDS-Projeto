@@ -67,6 +67,7 @@ def atualizar():
 
     arquivo.save(f'{upload_path}/capa{jogo.id}-{timestamp}.jpg')
     deleta_arquivo(jogo.id)
+    flash('O jogo foi editado com sucesso!')
     return redirect(url_for('index'))
 
 
