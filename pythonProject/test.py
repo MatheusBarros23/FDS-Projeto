@@ -71,17 +71,17 @@ time.sleep(5)
 driver.find_element_by_xpath('/html/body/main/div[3]/iframe').click()
 
 
-##Testando adição de 'novo jogo' sem nome, categoria ou console.
+##Testando adição de 'novo jogo' sem nome, categoria ou console
 driver.execute_script("window.scrollTo(1080, 0)")
 time.sleep(3)
 driver.find_element_by_xpath('/html/body/header/div[2]/nav/ul/li[2]/a').click()
 
-##Preenchendo credenciais de nome e senha.
+##Preenchendo credenciais de nome e senha
 driver.find_element_by_xpath('/html/body/main/div[2]/form/p[1]/input').send_keys("Kryno")
 driver.find_element_by_xpath('/html/body/main/div[2]/form/p[2]/input').send_keys("4321")
 driver.find_element_by_xpath('/html/body/main/div[2]/form/p[3]/button').click()
 
-#tela novo jogo.
+#tela novo jogo
 driver.execute_script("window.scrollTo(0, 780)")
 time.sleep(2)
 driver.find_element_by_xpath('/html/body/main/form/fieldset/button').click()
