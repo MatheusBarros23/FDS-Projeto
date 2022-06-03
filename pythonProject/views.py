@@ -20,7 +20,6 @@ def index():
     lista = jogo_dao.listar()
     return render_template('lista.html', titulo='Jogos', jogos=lista)
 
-
 @app.route('/novo')
 def novo():
     if 'usuario_logado' not in session or session['usuario_logado'] == None:
@@ -67,6 +66,7 @@ def atualizar():
 
     arquivo.save(f'{upload_path}/capa{jogo.id}-{timestamp}.jpg')
     deleta_arquivo(jogo.id)
+    flash('O jogo foi editado com sucesso!')
     return redirect(url_for('index'))
 
 
@@ -80,6 +80,8 @@ def deletar(id):
 @app.route('/login')
 def login():
     proxima = request.args.get('proxima')
+    if proxima == None:
+        proxima = '/'
     return render_template('login.html', proxima=proxima, titulo='Faça seu Login')
 
 
