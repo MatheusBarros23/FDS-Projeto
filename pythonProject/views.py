@@ -82,7 +82,11 @@ def login():
     proxima = request.args.get('proxima')
     if proxima == None:
         proxima = '/'
-    return render_template('login.html', proxima=proxima, titulo='Faça seu Login')
+    if 'usuario_logado' not in session or session['usuario_logado'] == None:
+        return render_template('login.html', proxima=proxima, titulo='Faça seu Login')
+    else:
+        flash('Você já esta logado!')
+        return redirect(url_for('index'))
 
 
 @app.route('/autenticar', methods=['POST','GET'])
@@ -101,8 +105,11 @@ def autenticar():
 
 @app.route('/logout')
 def logout():
-    session['usuario_logado'] = None
-    flash('Logout efetuado com sucesso!')
+    if 'usuario_logado' not in session or session['usuario_logado'] == None:
+        flash('Você não está logado!')
+    else:
+        session['usuario_logado'] = None
+        flash('Logout efetuado com sucesso!')
     return redirect(url_for('index'))
 
 

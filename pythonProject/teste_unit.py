@@ -22,5 +22,5 @@ class TestSalvarDao(unittest.TestCase):
         self.assertEqual(self.user1.senha, 'sportcampeao87')
 
 if __name__ == '__main__':
-
+    print("---Unit Tests---")
     unittest.main()
