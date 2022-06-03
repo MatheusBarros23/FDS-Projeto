@@ -1,8 +1,8 @@
 from time import time
-
-
 import time
 from selenium import webdriver
+import pyautogui
+
 
 ##Teste para abrir o site
 driver = webdriver.Chrome(executable_path=r'C:\Users\T-Gamer\Documents\ChromeDriver\chromedriver.exe')
@@ -18,11 +18,15 @@ driver.find_element_by_xpath('/html/body/main/div[2]/form/p[2]/input').send_keys
 driver.find_element_by_xpath('/html/body/main/div[2]/form/p[3]/button').click()
 
 #Adicionando o novo jogo
+time.sleep(5)
+pyautogui.click(x = 1627, y = 844)
 driver.find_element_by_xpath('//*[@id="nome"]').send_keys("CS:GO")
 driver.find_element_by_xpath('//*[@id="categoria"]').send_keys("FPS")
 driver.find_element_by_xpath('//*[@id="console"]').send_keys("PC")
 driver.find_element_by_xpath('//*[@id="critica"]').send_keys("The best game in History")
+
 driver.find_element_by_xpath('/html/body/main/form/fieldset/button').click()
 
+driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
 
 
