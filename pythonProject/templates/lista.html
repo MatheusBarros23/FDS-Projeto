@@ -13,7 +13,8 @@
             {% for jogo in jogos %} <!--Testar a criação dos botoes para cada jogo-->
                <main class="container">
                     <tr>
-                        <td>{{ jogo.nome }}</td> <!--Tornar link para pagina do jogo-->
+                        <td><a class="nav-link" href="{{ url_for('info', id=jogo.id) }}">{{ jogo.nome }}</a></td> <!--Tornar link para pagina do jogo-->
+                                                                                                                  <!--Agora, editar o HTML,css-->
                         <td>{{ jogo.categoria }}</td>
                         <td>{{ jogo.console }}</td>
                         <td><a href="{{ url_for('editar', id=jogo.id) }}">Editar</a></td>

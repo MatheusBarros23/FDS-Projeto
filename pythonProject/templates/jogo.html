@@ -1,0 +1,42 @@
+{% extends "template.html"%}
+{% block conteudo %}
+
+<!--DEIXAR TOP-->
+<!--Prox. Passos adicionar mais campos na bd dos jogos, para cada jogo ter seus videos, infos...-->
+
+     <main class="caixa">
+
+      <form action="{{ url_for('atualizar') }}" method="post" enctype="multipart/form-data">
+        <figure class="caixa">
+          <img class="responsive" src="{{ url_for('imagem', nome_arquivo= capa_jogo) }}">
+            <figcaption >
+
+            <label class="fileContainer">
+              Mudar Capa
+               <input class="input-img" type="file" name="arquivo" accept=".jpg">
+            </label>
+          </figcaption>
+        </figure>
+
+        <fieldset>
+          <input type="hidden" name="id" value="{{ jogo.id }}">
+          <div class="form-group">
+            <label for="nome" class="col-form-label">Nome</label>
+            <input type="text" id="nome" name="nome" class="form-control" value="{{ jogo.nome }}">
+          </div>
+
+          <div class="form-group">
+            <label for="categoria" class="col-form-label">Categoria</label>
+            <input type="text" id="categoria" name="categoria" class="form-control" value="{{ jogo.categoria }}">
+          </div>
+
+          <div class="form-group">
+            <label for="console" class="col-form-label">Console</label>
+            <input type="text" id="console" name="console" class="form-control" value="{{ jogo.console }}">
+          </div>
+
+
+        </fieldset>
+      </form>
+     </main>
+{% endblock %}
