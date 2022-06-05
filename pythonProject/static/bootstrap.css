@@ -118,7 +118,6 @@ nav a:hover {
 .container-video{
     padding: 1rem;
     text-align: center;
-
 }
 
 .video{
@@ -2237,6 +2236,15 @@ progress {
   line-height: 1.5;
 }
 
+.trailer-label {
+  padding-top: calc(0.375rem + 1px);
+  padding-bottom: calc(0.375rem + 1px);
+  margin-left: 0;
+  font-size: inherit;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
 
 .col-form-label-lg {
   padding-top: calc(0.5rem + 1px);
@@ -2388,8 +2396,6 @@ progress {
 }
 
 .form-control-plaintext {
-  display: block;
-  width: 100%;
   padding: 0.375rem 0;
   margin-bottom: 0;
   line-height: 1.5;
@@ -2457,6 +2463,7 @@ textarea.form-control {
   min-height: calc(1.5em + 0.75rem + 2px);
   font-weight: bold;
 }
+
 textarea.form-control-sm {
   min-height: calc(1.5em + 0.5rem + 2px);
 }
@@ -4624,7 +4631,7 @@ textarea.form-control-lg {
 }
 
 .card-title {
-  margin-bottom: 0.5rem;
+  margin: 1rem 10px 10px 10px;
 }
 
 .card-subtitle {

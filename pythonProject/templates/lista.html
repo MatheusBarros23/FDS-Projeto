@@ -13,11 +13,11 @@
             {% for jogo in jogos %} <!--Testar a criação dos botoes para cada jogo-->
                <main class="container">
                     <tr>
-                        <td><a class="nav-link" href="{{ url_for('info', id=jogo.id) }}">{{ jogo.nome }}</a></td> <!--Tornar link para pagina do jogo-->
-                                                                                                                  <!--Agora, editar o HTML,css-->
+                        <td><a class="nav-link" href="{{ url_for('info', id=jogo.id) }}">{{ jogo.nome }}</a></td>
+
                         <td>{{ jogo.categoria }}</td>
                         <td>{{ jogo.console }}</td>
-                        <td><a href="{{ url_for('editar', id=jogo.id) }}">Editar</a></td>
+                        <td><a href="{{ url_for('editar', id=jogo.id) }}">Editar</a></td> <!--Corrigir a opção de editar o jogo quando não logado!!-->
                         <td><a href="{{ url_for('deletar', id=jogo.id) }}">Deletar</a></td>
                     </tr>
                 {% endfor %}

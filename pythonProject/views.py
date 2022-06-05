@@ -56,7 +56,7 @@ def info(id):
     jogo = jogo_dao.busca_por_id(id)
     nome_imagem = recupera_imagem(id)
     capa_jogo = f'capa{id}.jpg'
-    return render_template('jogo.html', titulo=f" {jogo.nome} ", jogo=jogo, capa_jogo=nome_imagem)
+    return render_template('jogo.html', titulo=f" {jogo.nome} - {jogo.console}", jogo=jogo, capa_jogo=nome_imagem)
 
 
 @app.route('/atualizar', methods=['POST','GET'])
