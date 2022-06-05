@@ -47,5 +47,14 @@ ___
 ___
 #### SNAPS
 > Segue algumas imagens de como anda o desenvolvimento do site:
->![image](https://user-images.githubusercontent.com/88664949/170359792-877f2e9c-4e31-446f-b70c-5a46b8c37e5b.png)
->![image](https://user-images.githubusercontent.com/88664949/170359846-b0ba2566-473d-4ca2-aa9d-b48a10f41ec0.png)
+>![image](https://user-images.githubusercontent.com/88664949/172073522-7b9a5d9c-66a6-461a-84e5-ce925d80992e.png)
+>![image](https://user-images.githubusercontent.com/88664949/172073542-423bdb9a-af71-4c80-a52e-2e7d16fa87e4.png)
+
+## Pagina do Jogo
+![image](https://user-images.githubusercontent.com/88664949/172073601-44de582c-780f-4ec0-b728-51d5c615c24c.png)
+
+## Novo Jogo
+![image](https://user-images.githubusercontent.com/88664949/172073644-6ce42d5d-f2a2-4d64-bc30-b3943b8c710e.png)
+
+## Editar jogo
+![image](https://user-images.githubusercontent.com/88664949/172073655-8283a1ab-9ad5-4ceb-902e-f93f74365f22.png)
