@@ -83,7 +83,7 @@ def atualizar():
 def deletar(id):
     if 'usuario_logado' not in session or session['usuario_logado'] == None:
         flash('Você precisa estar logado para isso!')
-        return redirect(url_for('login', proxima=url_for('/')))
+        return redirect(url_for('login', proxima=url_for('index')))
     jogo_dao.deletar(id)
     flash('O jogo foi removido com sucesso!')
     return redirect(url_for('index'))
