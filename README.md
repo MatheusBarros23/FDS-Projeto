@@ -38,7 +38,7 @@ ___
 
 ___
 #### STATUS DO PROJETO
-> O projeto está em sua fase de implementação. A estrutura do site está sendo feita, bem como a realização dos testes de unidade e de sistema.
+> O projeto está em sua fase de implementação. A estrutura do site foi feita, bem como a realização dos testes de unidade e de sistema.
 
 ___
 #### LINK DO SITE
