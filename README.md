@@ -10,9 +10,9 @@ Inspirado em sites como o Metacritic, Rotten Tomatoes e My anime list.
 ___
 ### USO
 
->Os usuários poderão armazenar em uma lista os títulos dos jogos que já jogaram e poderão avaliar individualmente cada jogo. Bem como adicionar capa e critica, editar os dados de cada jogo e, também, deleta-los.
+>My Gaming Critics foi desenvolvido com o intuito de criar um ambiente onde o usuário poderia acessar uma lista de jogos, podendo acessar informações de determinado jogo e, se cadastrado,  adicionar uma crítica.
 
->As avaliações e críticas poderão ser acessados por outros usuários, os quais poderão utilizar estas informações para decidir se irão adquirir o jogo ou não.
+>As avaliações e críticas poderão ser acessados por outros usuários, os quais poderão utilizar estas informações para decidir se irão adquirir o jogo ou não. (Ainda não implementado)
 
 ___
 ### INFORMAÇÕES DOS AUTORES:
@@ -38,11 +38,11 @@ ___
 
 ___
 #### STATUS DO PROJETO
-> O projeto está em sua fase de implementação. A estrutura do site foi feita, bem como a realização dos testes de unidade e de sistema.
+> O projeto está em sua fase de implementação. A estrutura do site foi feita, bem como a realização dos testes de unidade e de sistema. 
 
 ___
 #### LINK DO SITE
-> O projeto pode ser acessado por este link: https://mprb-y45pa1sk4n81zw2p.socketxp.com/
+> O projeto pode ser acessado remotamente por este link: https://mprb-y45pa1sk4n81zw2p.socketxp.com/
 
 ___
 #### SNAPS
@@ -58,3 +58,15 @@ ___
 
 ## Editar jogo
 ![image](https://user-images.githubusercontent.com/88664949/172073655-8283a1ab-9ad5-4ceb-902e-f93f74365f22.png)
+
+___
+#### Ferramentas utilizadas no projeto:
+- Flask. 
+- Flask-MySQLdb.
+- SocketXP.
+- Gunicorn.
+- Selenium e Unittest (para testes).
+- Virtualenv.
+- MySQL.
+
+>Basicamente, podemos baixar o projeto e, tendo o python, instalar o requirements.txt, dai podemos com a IDE rodar o projeto dentro do app.py.
