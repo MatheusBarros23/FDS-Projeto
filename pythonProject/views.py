@@ -45,11 +45,13 @@ def criar():
 @app.route('/editar/<int:id>')
 def editar(id):
     if 'usuario_logado' not in session or session['usuario_logado'] == None:
-        return redirect(url_for('login', proxima=url_for('editar')))
-    jogo = jogo_dao.busca_por_id(id)
-    nome_imagem = recupera_imagem(id)
-    capa_jogo = f'capa{id}.jpg'
-    return render_template('editar.html', titulo='Editando jogo', jogo=jogo, capa_jogo=nome_imagem)
+        flash('Você precisa estar logado para isso!')
+        return redirect(url_for('login', proxima=url_for('index')))
+    else:
+        jogo = jogo_dao.busca_por_id(id)
+        nome_imagem = recupera_imagem(id)
+        capa_jogo = f'capa{id}.jpg'
+        return render_template('editar.html', titulo='Editando jogo', jogo=jogo, capa_jogo=nome_imagem)
 
 @app.route('/jogo/<int:id>')
 def info(id):
@@ -79,6 +81,9 @@ def atualizar():
 
 @app.route('/deletar/<int:id>')
 def deletar(id):
+    if 'usuario_logado' not in session or session['usuario_logado'] == None:
+        flash('Você precisa estar logado para isso!')
+        return redirect(url_for('login', proxima=url_for('/')))
     jogo_dao.deletar(id)
     flash('O jogo foi removido com sucesso!')
     return redirect(url_for('index'))
