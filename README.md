@@ -69,4 +69,4 @@ ___
 - Virtualenv.
 - MySQL.
 
->Basicamente, podemos baixar o projeto e, tendo o python, instalar o requirements.txt, dai podemos com a IDE rodar o projeto dentro do app.py.
+>Basicamente, podemos baixar o projeto e, com o python, dentro da pasta PythonProject, instalar o requirements.txt, dai podemos com a IDE rodar o projeto dentro do app.py.
